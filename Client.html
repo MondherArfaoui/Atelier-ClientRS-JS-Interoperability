@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Logement</title>
+
+    <script src="script.js"></script>
+    <script language = "javaScript">
+        var xmlhttp;
+        function init() {
+            xmlhttp = new XMLHttpRequest();
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h1>Tester Service Logement</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Saisir Delegation :  </td>
+                <td><input type="text" id="delegation" size="10">
+                    <input type="button" value="OK" onclick="getDetails()">
+                </td>
+            </tr>
+            <tr>
+                <td> Reference :  </td>
+                <td>
+                    <input type="text" readonly="true" id="reference">
+                </td>
+            </tr>
+            <tr>
+                <td> Adresse : </td>
+                <td>
+                    <textarea id="adresse"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> Gouvernorat : </td>
+                <td>
+                    <input type="text" readonly="true" id="gouvernorat">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
